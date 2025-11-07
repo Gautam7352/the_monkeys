@@ -1,7 +1,7 @@
 import CustomCodeTool from '@/components/editor/customBlocks/CodeBlock';
+import CustomEmbed from '@/components/editor/customBlocks/EmbedBlock';
 import { API_URL } from '@/constants/api';
 import axiosInstance from '@/services/api/axiosInstance';
-import CodeTool from '@editorjs/code';
 import Delimiter from '@editorjs/delimiter';
 import { EditorConfig } from '@editorjs/editorjs';
 import Header from '@editorjs/header';
@@ -38,9 +38,9 @@ export const getEditorConfig = (blogId: string): EditorConfig => ({
     },
     code: {
       class: CustomCodeTool,
-      // config: {
-      //   placeholder: 'Add your code snippet...',
-      // },
+    },
+    embed: {
+      class: CustomEmbed,
     },
     delimiter: Delimiter,
     quote: {

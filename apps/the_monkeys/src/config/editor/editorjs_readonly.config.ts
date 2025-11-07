@@ -1,6 +1,6 @@
 import CustomCodeTool from '@/components/editor/customBlocks/CodeBlock';
+import CustomEmbed from '@/components/editor/customBlocks/EmbedBlock';
 import TitleBlockTool from '@/components/editor/customBlocks/TitleBlock';
-import Code from '@editorjs/code';
 import Delimiter from '@editorjs/delimiter';
 import { EditorConfig } from '@editorjs/editorjs';
 import Header from '@editorjs/header';
@@ -44,6 +44,9 @@ export const editorConfig: EditorConfig = {
       // config: {
       //   placholder: '',
       // },
+    },
+    embed: {
+      class: CustomEmbed,
     },
     quote: {
       class: Quote,
