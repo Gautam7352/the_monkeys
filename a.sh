@@ -1,4 +1,10 @@
 #!/bin/bash
+echo "======================================="
+echo "downloading repo
+echo "======================================="
+
+gh repo clone Gautam7352/the_monkeys
+
 
 # Next.js Deployment Script for localhost:3000
 # Exit on any error
