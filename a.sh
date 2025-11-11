@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "======================================="
-echo "downloading repo
+echo "downloading repo"
 echo "======================================="
 
 gh repo clone Gautam7352/the_monkeys
