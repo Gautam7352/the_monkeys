@@ -1,4 +1,9 @@
 echo "======================================="
+echo "install node"
+echo "======================================="
+sudo apt update && sudo apt install -y nodejs npm
+
+echo "======================================="
 echo "kill process at port 3000"
 echo "======================================="
 fuser -k 3000/tcp
