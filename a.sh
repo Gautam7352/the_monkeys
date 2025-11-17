@@ -18,7 +18,7 @@ echo "======================================="
 gh repo clone Gautam7352/the_monkeys
 cd the_monkeys
 
-cat <<EOF > .env
+cat <<EOF > .env.local
 NEXT_PUBLIC_API_URL=https://dev.monkeys.support/api/v1
 NEXT_PUBLIC_API_URL_V2=https://dev.monkeys.support/api/v2/
 NEXT_PUBLIC_WSS_URL=wss://dev.monkeys.support/api/v1
@@ -30,7 +30,7 @@ NEXT_PUBLIC_GROWTHBOOK_CLIENT_KEY= test
 NEXT_PUBLIC_GROWTHBOOK_API_HOST= test
 EOF
 
-mv .env apps/the_monkeys
+mv .env.local apps/the_monkeys
 
 # Next.js Deployment Script for localhost:3000
 # Exit on any error
